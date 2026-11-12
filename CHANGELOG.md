@@ -14,4 +14,5 @@ All notable changes to this project are recorded here. The format follows
 - A GET-only Graph client with same-origin paging, retry on throttling, no redirects and a token that never appears in output.
 - Text, Markdown and JSON reports, offline evaluation of a saved snapshot, and a bundled fictional demo.
 - Tests against a local fake Graph server, so no tenant is needed.
+- A workflow that publishes the package to GitHub Packages when a release is published.
 - Community files, citation metadata and a Dependabot configuration.

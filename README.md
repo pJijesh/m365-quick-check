@@ -28,6 +28,8 @@ cd m365-quick-check
 node bin/m365-quick-check.mjs demo          # fictional tenant, no network, no sign-in
 ```
 
+The package is also published to GitHub Packages as `@pjijesh/m365-quick-check` when a release is made. GitHub Packages needs a GitHub token even to install public packages, so cloning is the simpler route.
+
 For a real tenant, give it a read-only access token for your own session in an environment variable. How to get one, and what the three scopes are, is in [`docs/permissions.md`](docs/permissions.md).
 
 ```bash

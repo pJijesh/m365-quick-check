@@ -1,0 +1,26 @@
+name: Tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Tests
+        run: node --test test/*.test.mjs
+      - name: The demo runs
+        run: node bin/m365-quick-check.mjs demo --fail-on none
+      - name: The example report is current
+        run: |
+          node bin/m365-quick-check.mjs demo --format md --out /tmp/report.md --fail-on none
+          diff /tmp/report.md examples/report.md

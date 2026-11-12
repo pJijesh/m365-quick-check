@@ -1,0 +1,179 @@
+{
+  "tool": "m365-quick-check",
+  "schema": 1,
+  "collectedAt": "2026-11-12T09:00:00.000Z",
+  "sections": {
+    "authorizationPolicy": {
+      "status": "ok",
+      "data": {
+        "id": "authorizationPolicy",
+        "allowInvitesFrom": "adminsAndGuestInviters",
+        "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+        "blockMsolPowerShell": false,
+        "defaultUserRolePermissions": {
+          "allowedToCreateApps": true,
+          "allowedToCreateTenants": false,
+          "allowedToCreateSecurityGroups": true,
+          "permissionGrantPoliciesAssigned": [
+            "ManagePermissionGrantsForSelf.microsoft-user-default-legacy"
+          ]
+        }
+      }
+    },
+    "adminConsentRequestPolicy": {
+      "status": "ok",
+      "data": {
+        "isEnabled": true,
+        "notifyReviewers": true,
+        "remindersEnabled": true,
+        "requestDurationInDays": 30,
+        "reviewers": [
+          {
+            "query": "/users/it-admin@fernwood.example",
+            "queryType": "MicrosoftGraph"
+          }
+        ]
+      }
+    },
+    "securityDefaults": {
+      "status": "ok",
+      "data": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "isEnabled": false
+      }
+    },
+    "authenticationMethodsPolicy": {
+      "status": "ok",
+      "data": {
+        "authenticationMethodConfigurations": [
+          {
+            "id": "Fido2",
+            "state": "enabled"
+          },
+          {
+            "id": "MicrosoftAuthenticator",
+            "state": "enabled"
+          },
+          {
+            "id": "Sms",
+            "state": "enabled"
+          },
+          {
+            "id": "Voice",
+            "state": "disabled"
+          },
+          {
+            "id": "TemporaryAccessPass",
+            "state": "enabled"
+          }
+        ]
+      }
+    },
+    "organization": {
+      "status": "ok",
+      "data": [
+        {
+          "displayName": "Fernwood Services (fictional)",
+          "onPremisesSyncEnabled": true,
+          "onPremisesLastSyncDateTime": "2026-11-12T08:40:00Z",
+          "technicalNotificationMails": [
+            "it-alerts@fernwood.example"
+          ],
+          "securityComplianceNotificationMails": []
+        }
+      ]
+    },
+    "subscribedSkus": {
+      "status": "ok",
+      "data": [
+        {
+          "skuPartNumber": "SPE_E3",
+          "appliesTo": "User",
+          "capabilityStatus": "Enabled",
+          "consumedUnits": 214,
+          "prepaidUnits": {
+            "enabled": 250,
+            "suspended": 0,
+            "warning": 0
+          }
+        },
+        {
+          "skuPartNumber": "EXCHANGEENTERPRISE",
+          "appliesTo": "User",
+          "capabilityStatus": "Enabled",
+          "consumedUnits": 12,
+          "prepaidUnits": {
+            "enabled": 40,
+            "suspended": 0,
+            "warning": 0
+          }
+        },
+        {
+          "skuPartNumber": "POWER_BI_PRO",
+          "appliesTo": "User",
+          "capabilityStatus": "Enabled",
+          "consumedUnits": 29,
+          "prepaidUnits": {
+            "enabled": 30,
+            "suspended": 0,
+            "warning": 0
+          }
+        },
+        {
+          "skuPartNumber": "FLOW_FREE",
+          "appliesTo": "User",
+          "capabilityStatus": "Enabled",
+          "consumedUnits": 41,
+          "prepaidUnits": {
+            "enabled": 10000,
+            "suspended": 0,
+            "warning": 0
+          }
+        }
+      ]
+    },
+    "applications": {
+      "status": "ok",
+      "data": [
+        {
+          "displayName": "Fernwood HR sync",
+          "appId": "aaaaaaaa-0000-0000-0000-000000000001",
+          "passwordCredentials": [
+            {
+              "displayName": "prod",
+              "endDateTime": "2026-11-30T00:00:00Z"
+            }
+          ],
+          "keyCredentials": []
+        },
+        {
+          "displayName": "Fernwood reporting",
+          "appId": "aaaaaaaa-0000-0000-0000-000000000002",
+          "passwordCredentials": [
+            {
+              "displayName": "old",
+              "endDateTime": "2025-06-01T00:00:00Z"
+            }
+          ],
+          "keyCredentials": [
+            {
+              "displayName": "cert",
+              "endDateTime": "2026-12-05T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "displayName": "Fernwood intranet",
+          "appId": "aaaaaaaa-0000-0000-0000-000000000003",
+          "passwordCredentials": [
+            {
+              "displayName": "prod",
+              "endDateTime": "2027-09-01T00:00:00Z"
+            }
+          ],
+          "keyCredentials": []
+        }
+      ]
+    }
+  }
+}

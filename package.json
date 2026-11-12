@@ -1,0 +1,12 @@
+{
+  "name": "m365-quick-check",
+  "version": "1.0.0",
+  "description": "A read-only, zero-dependency quick check of Microsoft 365 and Entra tenant settings through Microsoft Graph.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Puliyappottammal Jijesh",
+  "bin": { "m365-quick-check": "bin/m365-quick-check.mjs" },
+  "repository": { "type": "git", "url": "git+https://github.com/pJijesh/m365-quick-check.git" },
+  "scripts": { "demo": "node bin/m365-quick-check.mjs demo --fail-on none", "report": "node bin/m365-quick-check.mjs demo --format md --out examples/report.md", "test": "node --test test/*.test.mjs" },
+  "engines": { "node": ">=18" }
+}

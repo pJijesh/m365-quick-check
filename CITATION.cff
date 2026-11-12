@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "m365-quick-check"
+abstract: "A read-only, zero-dependency quick check of Microsoft 365 and Entra tenant settings through Microsoft Graph: guest and consent settings, application secret expiry, unused licences, directory sync health, authentication methods and notification contacts."
+type: software
+authors:
+  - family-names: "Puliyappottammal"
+    given-names: "Jijesh"
+repository-code: "https://github.com/pJijesh/m365-quick-check"
+url: "https://github.com/pJijesh/m365-quick-check"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-12"
+keywords:
+  - microsoft-365
+  - entra-id
+  - microsoft-graph
+  - security
+  - read-only
+  - nodejs
